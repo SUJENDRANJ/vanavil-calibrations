@@ -1,520 +1,965 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-569Z3TFR");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="title" content="Vanavil Calibrations | ISO Certified Calibration & Validation Services">
-  <meta name="description"
-    content="Vanavil Calibrations offers ISO/IEC 17025 certified calibration and validation services for hospitals, laboratories, and industrial sectors. Trusted by 500+ clients since 2004.">
-  <meta name="keywords"
-    content="calibration services, validation services, ISO 17025, NABL accredited, hospital equipment calibration, laboratory calibration, industrial calibration, validation services, precise calibration solutions">
-  <meta property="og:title" content="Vanavil Calibrations | ISO Certified Calibration & Validation Services">
-  <meta property="og:description"
-    content="Vanavil Calibrations offers ISO/IEC 17025 certified calibration and validation services for hospitals, laboratories, and industrial sectors. Trusted by 500+ clients since 2004.">
-  <meta property="og:image" content="assets/images/Vanavil_logo.webp">
-  <meta property="og:url" content="https://www.vanavilcalibrations.com">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" sizes="56x56" href="assets/images/Vanavil_logo.webp" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/swiper.min.css" />
-  <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-  <script src="assets/js/swiper.min.js"></script>
-  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/aos.css" />
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="title"
+      content="Vanavil Calibrations | ISO Certified Calibration & Validation Services"
+    />
+    <meta
+      name="description"
+      content="Vanavil Calibrations offers ISO/IEC 17025 certified calibration and validation services for hospitals, laboratories, and industrial sectors. Trusted by 500+ clients since 2004."
+    />
+    <meta
+      name="keywords"
+      content="calibration services, validation services, ISO 17025, NABL accredited, hospital equipment calibration, laboratory calibration, industrial calibration, validation services, precise calibration solutions"
+    />
+    <meta
+      property="og:title"
+      content="Vanavil Calibrations | ISO Certified Calibration & Validation Services"
+    />
+    <meta
+      property="og:description"
+      content="Vanavil Calibrations offers ISO/IEC 17025 certified calibration and validation services for hospitals, laboratories, and industrial sectors. Trusted by 500+ clients since 2004."
+    />
+    <meta property="og:image" content="assets/images/Vanavil_logo.webp" />
+    <meta property="og:url" content="https://www.vanavilcalibrations.com" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="56x56"
+      href="assets/images/Vanavil_logo.webp"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/flaticon.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-default.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/meanmenu.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="venobox/venobox.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-icons.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/clash-display"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+  </head>
 
-<body>
-  <div class="loader-wrapper">
-    <div class="loader"> <img src="assets/images/Vanavil_logo.webp" style="width: 100%;" alt="logo" /> </div>
-    <div class="loder-section left-section"></div>
-    <div class="loder-section right-section"></div>
-  </div>
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
-  <div id="sticky-header" class="mediic_nav_manu bg-light">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-2 col-xl-3">
-          <div class="logo cursor-scale small"> <a class="logo_img" href="index.html" title="mediic"> <img
-                src="assets/images/Vanavil_logo.webp" style="width: 250px;" alt="logo" /> </a> <a class="main_sticky"
-              href="index.html" title="mediic"> <img src="assets/images//Vanavil_logo.webp" style="width: 100px;"
-                alt="logo" /> </a> </div>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-569Z3TFR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="loader-wrapper">
+      <div class="loader">
+        <img
+          src="assets/images/Vanavil_logo.webp"
+          style="width: 100%"
+          alt="logo"
+        />
+      </div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <div id="sticky-header" class="mediic_nav_manu bg-light">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col-xl-3">
+            <div class="logo cursor-scale small">
+              <a class="logo_img" href="index.html" title="mediic">
+                <img
+                  src="assets/images/Vanavil_logo.webp"
+                  style="width: 250px"
+                  alt="logo"
+                />
+              </a>
+              <a class="main_sticky" href="index.html" title="mediic">
+                <img
+                  src="assets/images//Vanavil_logo.webp"
+                  style="width: 100px"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-xl-6 text-center">
+            <nav class="mediic_menu text-center">
+              <ul class="nav_scroll">
+                <li>
+                  <a
+                    class="mdy-hover active cursor-scale small"
+                    href="index.html"
+                    >Home
+                  </a>
+                </li>
+                <li><a class="mdy-hover" href="about.html">About Us</a></li>
+                <li>
+                  <a class="mdy-hover" href="#">Services</a>
+                  <ul class="sub-menu">
+                    <li><a href="calibration.html">Calibration</a></li>
+                    <li><a href="validation.html">Validation</a></li>
+                    <li><a href="scope.html">Scope</a></li>
+                  </ul>
+                </li>
+                <li><a class="mdy-hover" href="careers.html">Careers</a></li>
+                <li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3 col-xl-3 text-end">
+            <div class="mediic-button">
+              <a href="contact.html">
+                Get Touch with us
+                <img src="assets/images/resource/arrow.png" alt="" />
+                <div class="mediic-hover-btn hover-btn"></div>
+                <div class="mediic-hover-btn hover-btn2"></div>
+                <div class="mediic-hover-btn hover-btn3"></div>
+                <div class="mediic-hover-btn hover-btn4"></div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-7 col-xl-6 text-center">
-          <nav class="mediic_menu text-center">
-            <ul class="nav_scroll">
-              <li> <a class="mdy-hover active cursor-scale small" href="index.html">Home </a> </li>
-              <li> <a class="mdy-hover" href="about.html">About Us</a> </li>
-              <li> <a class="mdy-hover" href="#">Services</a>
-                <ul class="sub-menu">
-                  <li><a href="calibration.html">Calibration</a></li>
-                  <li><a href="validation.html">Validation</a></li>
-                  <li><a href="scope.html">Scope</a></li>
+      </div>
+    </div>
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+      <div class="mobile-menu">
+        <nav class="mediic_menu">
+          <ul class="nav_scroll">
+            <li>
+              <a class="mdy-hover active cursor-scale small" href="index.html"
+                >Home
+              </a>
+            </li>
+            <li><a class="mdy-hover" href="about.html">About Us</a></li>
+            <li>
+              <a class="mdy-hover" href="#">Services </a>
+              <ul class="sub-menu">
+                <li><a href="calibration.html">Calibration</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="scope.html">Scope</a></li>
+              </ul>
+            </li>
+            <li><a class="mdy-hover" href="careers.html">Careers</a></li>
+            <li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row hero-bg align-items-center">
+          <div class="col-lg-6 col-md-6 mt-5">
+            <div class="hero-content">
+              <h5 class="cursor-scale small">Accredited by</h5>
+              <h1 class="cursor-scale">
+                NABL-National Accreditation Board for Testing and Calibration
+                Laboratories.
+              </h1>
+              <div class="mediic-btn cursor-scale small">
+                <a href="about.html">
+                  Learn More
+                  <img src="assets/images/resource/arrow.png" alt="icon"
+                /></a>
+              </div>
+              <div class="hero-mediic-service gap-4">
+                <div class="mediic-service-bx" data-aos="flip-right">
+                  <div class="mediic-service-inner-bx">
+                    <div class="mediic-hero-icon cursor-scale small">
+                      <img src="assets/images/slider/tick.png" alt="icon" />
+                    </div>
+                    <div class="mediic-hero-content">
+                      <h4 class="cursor-scale small">500+</h4>
+                      <p>Satisfied clients</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mediic-service-bx" data-aos="flip-left">
+                  <div class="mediic-service-inner-bx">
+                    <div class="mediic-hero-icon cursor-scale small">
+                      <img src="assets/images/slider/tick.png" alt="icon" />
+                    </div>
+                    <div class="mediic-hero-content">
+                      <h4 class="cursor-scale small">95%</h4>
+                      <p>Satisfaction rates</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="hero-thumb" data-aos="zoom-in-left">
+              <img src="assets/images/hero-image-1.png" alt="" />
+            </div>
+            <div class="hero-all-shape">
+              <div class="hero-shape">
+                <img src="assets/images/slider/shape1.png" alt="" />
+              </div>
+              <div class="hero-shape2">
+                <span class="wood-animation"
+                  ><img src="assets/images/slider/heart.png" alt=""
+                /></span>
+              </div>
+              <div class="hero-shape3">
+                <div class="button"><span>+20 Years Experience</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="container">
+        <div class="row about-bg align-items-center">
+          <div class="col-lg-4 pl-0" data-aos="zoom-in-right">
+            <div class="about-thumb">
+              <img
+                src="assets/images/home-about-us.jpeg"
+                alt=""
+                height="100%"
+                style="width: 500px; max-width: 100%"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 pr-0">
+            <div class="top-mediic-section">
+              <div class="mediic-section-title padding-0">
+                <h4>About Vanavil Calibrations</h4>
+                <h1>
+                  Trusted NABL-Accredited Calibration with Over 3 Years of
+                  Expertise
+                </h1>
+              </div>
+              <div class="mediic-desc">
+                <p>
+                  We’ve been delivering precise calibration solutions, serving
+                  hospitals and industries with unparalleled accuracy and trust.
+                  Accredited by NABL, our services cater to over 500+ satisfied
+                  clients nationwide.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 mb-3">
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    Fully NABL Accredited
+                  </li>
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    Compliance with ISO/IEC 17025 Standards
+                  </li>
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    On-site and Laboratory Calibration Services
+                  </li>
                 </ul>
-              </li>
-              <li> <a class="mdy-hover" href="careers.html">Careers</a> </li>
-              <li> <a class="mdy-hover" href="contact.html">Contact Us</a> </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-3 col-xl-3 text-end">
-          <div class="mediic-button"> <a href="contact.html"> Get Touch with us <img
-                src="assets/images/resource/arrow.png" alt="">
-              <div class="mediic-hover-btn hover-btn"></div>
-              <div class="mediic-hover-btn hover-btn2"></div>
-              <div class="mediic-hover-btn hover-btn3"></div>
-              <div class="mediic-hover-btn hover-btn4"></div>
-            </a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
-    <div class="mobile-menu">
-      <nav class="mediic_menu">
-        <ul class="nav_scroll">
-          <li> <a class="mdy-hover active cursor-scale small" href="index.html">Home </a> </li>
-          <li><a class="mdy-hover" href="about.html">About Us</a></li>
-          <li> <a class="mdy-hover" href="#">Services </a>
-            <ul class="sub-menu">
-              <li><a href="calibration.html">Calibration</a></li>
-              <li><a href="validation.html">Validation</a></li>
-              <li><a href="scope.html">Scope</a></li>
-            </ul>
-          </li>
-          <li><a class="mdy-hover" href="careers.html">Careers</a></li>
-          <li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="hero-section d-flex align-items-center">
-    <div class="container">
-      <div class="row hero-bg align-items-center">
-        <div class="col-lg-6 col-md-6 mt-5">
-          <div class="hero-content">
-            <h5 class="cursor-scale small">Accredited by</h5>
-            <h1 class="cursor-scale"> NABL-National Accreditation Board for Testing and Calibration Laboratories. </h1>
-            <div class="mediic-btn cursor-scale small"> <a href="about.html"> Learn More <img
-                  src="assets/images/resource/arrow.png" alt="icon" /></a> </div>
-            <div class="hero-mediic-service gap-4">
-              <div class="mediic-service-bx" data-aos="flip-right">
-                <div class="mediic-service-inner-bx">
-                  <div class="mediic-hero-icon cursor-scale small"> <img src="assets/images/slider/tick.png"
-                      alt="icon" /> </div>
-                  <div class="mediic-hero-content">
-                    <h4 class="cursor-scale small">500+</h4>
-                    <p>Satisfied clients</p>
-                  </div>
-                </div>
               </div>
-              <div class="mediic-service-bx" data-aos="flip-left">
-                <div class="mediic-service-inner-bx">
-                  <div class="mediic-hero-icon cursor-scale small"> <img src="assets/images/slider/tick.png"
-                      alt="icon" /> </div>
-                  <div class="mediic-hero-content">
-                    <h4 class="cursor-scale small">95%</h4>
-                    <p> Satisfaction rates</p>
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    Expert Technicians with Decades of Experience
+                  </li>
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    Advanced Equipment for Precision Testing
+                  </li>
+                  <li
+                    class="d-flex align-items-center gap-2"
+                    data-aos="zoom-in-left"
+                  >
+                    <img
+                      src="assets/images/slider/tick.png"
+                      alt=""
+                      style="width: 25px"
+                    />
+                    Quick Turnaround & Reliable Support
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="hero-thumb" data-aos="zoom-in-left"> <img src="assets/images/hero-image-1.png" alt="" /> </div>
-          <div class="hero-all-shape">
-            <div class="hero-shape"> <img src="assets/images/slider/shape1.png" alt="" /> </div>
-            <div class="hero-shape2"> <span class="wood-animation"><img src="assets/images/slider/heart.png"
-                  alt="" /></span> </div>
-            <div class="hero-shape3">
-              <div class="button"> <span>+20 Years Experience</span> </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="about-section">
-    <div class="container">
-      <div class="row about-bg align-items-center">
-        <div class="col-lg-4 pl-0" data-aos="zoom-in-right">
-          <div class="about-thumb"> <img src="assets/images/home-about-us.jpeg" alt="" height="100%"
-              style="width: 500px; max-width:100%;" /> </div>
-        </div>
-        <div class="col-lg-8 pr-0">
+    <div class="services-section">
+      <div class="container">
+        <div class="row">
           <div class="top-mediic-section">
-            <div class="mediic-section-title padding-0">
-              <h4>About Vanavil Calibrations</h4>
-              <h1>Trusted NABL-Accredited Calibration with Over 3 Years of Expertise</h1>
-            </div>
-            <div class="mediic-desc">
-              <p> We’ve been delivering precise calibration solutions, serving hospitals and industries with
-                unparalleled accuracy and trust. Accredited by NABL, our services cater to over 500+ satisfied clients
-                nationwide. </p>
+            <div class="mediic-section-title white text-center">
+              <h4>ISO/IEC 17025 Calibration Experts</h4>
+              <h1>Precision, Validation, 24/7 Service</h1>
             </div>
           </div>
-          <div class="row mb-3">
-            <div class="col-lg-6 mb-3">
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> Fully NABL Accredited </li>
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> Compliance with ISO/IEC 17025
-                  Standards </li>
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> On-site and Laboratory
-                  Calibration Services </li>
-              </ul>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="flip-right">
+            <div class="service-single-box">
+              <div class="service-content">
+                <h4>Calibrations</h4>
+                <p>
+                  We provide <b>ISO/IEC certified calibration</b> services with
+                  a dedicated team of experts ensuring accuracy in every
+                  measurement.
+                </p>
+              </div>
+              <div class="mediic-button">
+                <a href="contact.html">
+                  Read More
+                  <img src="assets/images/resource/arrow.png" alt="" />
+                  <div class="mediic-hover-btn hover-btn"></div>
+                  <div class="mediic-hover-btn hover-btn2"></div>
+                  <div class="mediic-hover-btn hover-btn3"></div>
+                  <div class="mediic-hover-btn hover-btn4"></div>
+                </a>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> Expert Technicians with Decades
-                  of Experience </li>
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> Advanced Equipment for Precision
-                  Testing </li>
-                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left"> <img
-                    src="assets/images/slider/tick.png" alt="" style="width: 25px; " /> Quick Turnaround & Reliable
-                  Support </li>
-              </ul>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="flip-up">
+            <div class="service-single-box">
+              <div class="service-content">
+                <h4>Appointments</h4>
+                <p>
+                  Schedule your
+                  <b>calibration and validation services</b> today! Call us for
+                  assistance—available 24/7 for your convenience.
+                </p>
+              </div>
+              <div class="mediic-button">
+                <a href="contact.html">
+                  Read More
+                  <img src="assets/images/resource/arrow.png" alt="" />
+                  <div class="mediic-hover-btn hover-btn"></div>
+                  <div class="mediic-hover-btn hover-btn2"></div>
+                  <div class="mediic-hover-btn hover-btn3"></div>
+                  <div class="mediic-hover-btn hover-btn4"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="flip-left">
+            <div class="service-single-box">
+              <div class="service-content">
+                <h4>Validations</h4>
+                <p>
+                  Our validation services ensure compliance with regulatory
+                  standards, enhancing your equipment’s reliability.
+                </p>
+              </div>
+              <div class="mediic-button">
+                <a href="contact.html">
+                  Read More
+                  <img src="assets/images/resource/arrow.png" alt="" />
+                  <div class="mediic-hover-btn hover-btn"></div>
+                  <div class="mediic-hover-btn hover-btn2"></div>
+                  <div class="mediic-hover-btn hover-btn3"></div>
+                  <div class="mediic-hover-btn hover-btn4"></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="services-section">
-    <div class="container">
-      <div class="row">
-        <div class="top-mediic-section">
-          <div class="mediic-section-title white text-center">
-            <h4>ISO/IEC 17025 Calibration Experts</h4>
-            <h1>Precision, Validation, 24/7 Service</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6" data-aos="flip-right">
-          <div class="service-single-box">
-            <div class="service-content">
-              <h4>Calibrations</h4>
-              <p> We provide <b>ISO/IEC certified calibration</b> services with a dedicated team of experts ensuring
-                accuracy in every measurement. </p>
+    <div class="portfolio-section">
+      <div class="container-fluid">
+        <div class="row portfolio-bg">
+          <div class="swiper portfolio">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/ECG_Machine.webp"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">ECG Machine</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/Pulse Oximeter.jpg"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">Pulse Oximeter</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/Ventilator Machine.webp"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title">
+                      <a href="#">Ventilator Machine</a>
+                    </h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img src="assets/images/machine/centrifuge.jpg" alt="img" />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">Centrifuge</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/Boyles appratus.webp"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">Boyles appratus</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/Baby Warmer.png"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">Baby Warmer</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/Multipara Monitor.jpg"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title">
+                      <a href="#">Multipara Monitor</a>
+                    </h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-single-box">
+                  <div class="portfolio-thumb">
+                    <img
+                      src="assets/images/machine/pressure gauge.jpeg"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="portfolio-content">
+                    <h4 class="port-title"><a href="#">pressure gauge</a></h4>
+                  </div>
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+              </div>
             </div>
-            <div class="mediic-button"> <a href="contact.html"> Read More <img src="assets/images/resource/arrow.png"
-                  alt="" />
-                <div class="mediic-hover-btn hover-btn"></div>
-                <div class="mediic-hover-btn hover-btn2"></div>
-                <div class="mediic-hover-btn hover-btn3"></div>
-                <div class="mediic-hover-btn hover-btn4"></div>
-              </a> </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="flip-up">
-          <div class="service-single-box">
-            <div class="service-content">
-              <h4>Appointments</h4>
-              <p> Schedule your <b>calibration and validation services</b> today! Call us for assistance—available 24/7
-                for your convenience. </p>
-            </div>
-            <div class="mediic-button"> <a href="contact.html"> Read More <img src="assets/images/resource/arrow.png"
-                  alt="" />
-                <div class="mediic-hover-btn hover-btn"></div>
-                <div class="mediic-hover-btn hover-btn2"></div>
-                <div class="mediic-hover-btn hover-btn3"></div>
-                <div class="mediic-hover-btn hover-btn4"></div>
-              </a> </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="flip-left">
-          <div class="service-single-box">
-            <div class="service-content">
-              <h4>Validations</h4>
-              <p> Our validation services ensure compliance with regulatory standards, enhancing your equipment’s
-                reliability. </p>
-            </div>
-            <div class="mediic-button"> <a href="contact.html"> Read More <img src="assets/images/resource/arrow.png"
-                  alt="" />
-                <div class="mediic-hover-btn hover-btn"></div>
-                <div class="mediic-hover-btn hover-btn2"></div>
-                <div class="mediic-hover-btn hover-btn3"></div>
-                <div class="mediic-hover-btn hover-btn4"></div>
-              </a> </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="portfolio-section">
-    <div class="container-fluid">
-      <div class="row portfolio-bg">
-        <div class="swiper portfolio">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/ECG_Machine.webp" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">ECG Machine</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
+    <div class="container-field bd-bg mt-5 mb-5">
+      <div class="container bd-bg mx-auto px-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="cursor-scale display-5">Our Clients</h1>
+          </div>
+        </div>
+        <div
+          class="row mt-2 d-flex justify-content-center align-items-center"
+          id="client-img"
+        ></div>
+      </div>
+    </div>
+    <div class="mediic-subscribe style-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="subscribe-content" data-aos="fade-up">
+              <div class="subscribe-icon cursor-scale">
+                <img src="assets/images/resource/bag.png" alt="" />
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/Pulse Oximeter.jpg" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Pulse Oximeter</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/Ventilator Machine.webp" alt="img" />
-                </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Ventilator Machine</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/centrifuge.jpg" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Centrifuge</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/Boyles appratus.webp" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Boyles appratus</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/Baby Warmer.png" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Baby Warmer</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/Multipara Monitor.jpg" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">Multipara Monitor</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio-single-box">
-                <div class="portfolio-thumb"> <img src="assets/images/machine/pressure gauge.jpeg" alt="img" /> </div>
-                <div class="portfolio-content">
-                  <h4 class="port-title"> <a href="#">pressure gauge</a> </h4>
-                </div>
-                <div class="mediic-hover-box hover-bx"></div>
-                <div class="mediic-hover-box hover-bx2"></div>
-                <div class="mediic-hover-box hover-bx3"></div>
-                <div class="mediic-hover-box hover-bx4"></div>
+              <div class="subscribe-title">
+                <h1 class="cursor-scale small">
+                  A Unit of Rainbow Bio Medical Engineers
+                </h1>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-field bd-bg mt-5 mb-5">
-    <div class="container bd-bg mx-auto px-4">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="cursor-scale display-5">Our Clients</h1>
-        </div>
-      </div>
-      <div class="row mt-2 d-flex justify-content-center align-items-center" id="client-img"> </div>
-    </div>
-  </div>
-  <div class="mediic-subscribe style-2">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="subscribe-content" data-aos="fade-up">
-            <div class="subscribe-icon cursor-scale"> <img src="assets/images/resource/bag.png" alt="" /> </div>
-            <div class="subscribe-title">
-              <h1 class="cursor-scale small"> A Unit of Rainbow Bio Medical Engineers </h1>
+          <div class="col-lg-5">
+            <div
+              class="mediic-button text-right cursor-scale small"
+              data-aos="fade-down"
+            >
+              <a href="contact.html" class="mediic-btn">
+                <span class="mediic-btn__hover"></span>
+                <span class="mediic-btn__hover"></span>
+                <span class="mediic-btn__hover"></span>
+                <span class="mediic-btn__hover"></span>
+                <span class="mediic-btn__hover"></span>
+                <span class="mediic-btn__hover"></span> Contact Us
+                <i class="bi bi-arrow-return-right"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="mediic-button text-right cursor-scale small" data-aos="fade-down"> <a href="contact.html"
-              class="mediic-btn"> <span class="mediic-btn__hover"></span> <span class="mediic-btn__hover"></span> <span
-                class="mediic-btn__hover"></span> <span class="mediic-btn__hover"></span> <span
-                class="mediic-btn__hover"></span> <span class="mediic-btn__hover"></span> Contact Us <i
-                class="bi bi-arrow-return-right"></i> </a> </div>
-        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 col-md-6">
-          <div class="widget widgets-company-info">
-            <div class="company-logo cursor-scale small"> <a href="index.html"><img
-                  src="assets/images/Vanavil_logo.webp" alt="logo" style="max-width: 300px; width:100%;" /></a> </div>
-            <div class="company-info-desc">
-              <p> Vanavil Calibrations – Your NABL-accredited partner for precise calibration and validation services
-                since 2004. Trusted by industries nationwide, we ensure accuracy, compliance, and reliability with every
-                service. </p>
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-6">
+            <div class="widget widgets-company-info">
+              <div class="company-logo cursor-scale small">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/Vanavil_logo.webp"
+                    alt="logo"
+                    style="max-width: 300px; width: 100%"
+                /></a>
+              </div>
+              <div class="company-info-desc">
+                <p>
+                  Vanavil Calibrations – Your NABL-accredited partner for
+                  precise calibration and validation services since 2004.
+                  Trusted by industries nationwide, we ensure accuracy,
+                  compliance, and reliability with every service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="widget widget-nav-menu">
+              <h4 class="widget-title">Useful Links</h4>
+              <div class="menu-quick-link-content">
+                <ul class="footer-menu">
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="about.html"> About Company </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="calibration.html">Calibration</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="validation.html">Validation</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="scope.html">Scope of Service</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="careers.html">Careers</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-star-fill"></i
+                    ><a href="contact.html"> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="widget widget-nav-menu">
-            <h4 class="widget-title">Useful Links</h4>
-            <div class="menu-quick-link-content">
-              <ul class="footer-menu">
-                <li> <i class="bi bi-star-fill"></i><a href="about.html"> About Company </a> </li>
-                <li> <i class="bi bi-star-fill"></i><a href="calibration.html">Calibration</a> </li>
-                <li> <i class="bi bi-star-fill"></i><a href="validation.html">Validation</a> </li>
-                <li> <i class="bi bi-star-fill"></i><a href="scope.html">Scope of Service</a> </li>
-                <li> <i class="bi bi-star-fill"></i><a href="careers.html">Careers</a> </li>
-                <li> <i class="bi bi-star-fill"></i><a href="contact.html"> Contact Us </a> </li>
-              </ul>
+        <div class="row footer-btm">
+          <div class="col-lg-6 col-md-6">
+            <div class="mediic-social-icon cursor-scale small">
+              <a href="https://www.facebook.com/share/15Ukengs8n/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/vanavil-calibrations/">
+                <i class="fa-brands fa-linkedin-in"> </i
+              ></a>
+              <a href="https://www.youtube.com/@vanavilcalibrations">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_vanavil_calibrations_/profilecard/?igsh=dnVpZnQzNmZnenBk"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row footer-btm">
-        <div class="col-lg-6 col-md-6">
-          <div class="mediic-social-icon cursor-scale small">
-            <a href="https://www.facebook.com/share/15Ukengs8n/"> <i class="fab fa-facebook-f"></i>
-            </a> <a href="https://www.linkedin.com/company/vanavil-calibrations/"> <i class="fa-brands fa-linkedin-in">
-              </i></a>
-            <a href="https://www.youtube.com/@vanavilcalibrations"> <i class="fa-brands fa-youtube"></i> </a>
-            <a href="https://www.instagram.com/_vanavil_calibrations_/profilecard/?igsh=dnVpZnQzNmZnenBk">
-              <i class="fab fa-instagram"></i> </a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="text-lg-end  text-white">
-            <p> Vanavil Calibrations ©2024 - All Rights Reserved </p>
+          <div class="col-lg-6 col-md-6">
+            <div class="text-lg-end text-white">
+              <p>Vanavil Calibrations ©2024 - All Rights Reserved</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div id="progress" class="progress hide">
-    <div id="progress-value"></div>
-  </div>
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
-  <script src="assets/js/ScrollSmoother.min.js"></script>
-  <script src="assets/js/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/odometer.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <script src="venobox/venobox.js"></script>
-  <script src="venobox/venobox.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.meanmenu.js"></script>
-  <script src="assets/js/jquery.scrollUp.js"></script>
-  <script src="assets/js/appear.js"></script>
-  <script src="assets/js/jquery.barfiller.js"></script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/my.js"></script>
-  <script>
-    const clients = [{ 'title': 'Vinayaka Missions Kirupananda Variyar Medical College Salem', 'slug': 'vinayaka-missions-kirupananda-variyar-medical-college-salem', 'url': 'assets/images/client/Vinayaka-missions-kirupananda-variyar-medical-college-salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Vims Hospital Salem', 'slug': 'vims-hospital-salem', 'url': 'assets/images/client/VIMS-hospital-Salem.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Villupuram Govt. Medical College', 'slug': 'villupuram-govt.-medical-college', 'url': 'assets/images/client/Villupuram-govt.-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Tirunelveli Medical College', 'slug': 'tirunelveli-medical-college', 'url': 'assets/images/client/Tirunelveli-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2 h-100' },
-    { 'title': 'Uyirthuli Blood Bank Trichy', 'slug': 'uyirthuli-blood-bank-trichy', 'url': 'assets/images/client/Uyirthuli-Blood-Bank-Trichy.jpg', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
-    { 'title': 'Thootukudi Medical College', 'slug': 'thootukudi-medical-college', 'url': 'assets/images/client/Thootukudi-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Tcr Multispeciality Hospital Krishnagiri', 'slug': 'tcr-multispeciality-hospital-krishnagiri', 'url': 'assets/images/client/Tcr-Multispeciality-hospital-Krishnagiri.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'St Joseph Hospital Dindigul', 'slug': 'st-joseph-hospital-dindigul', 'url': 'assets/images/client/St-Joseph-Hospital-Dindigul.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Sri Gokulam Hospitals Salem', 'slug': 'sri-gokulam-hospitals-salem', 'url': 'assets/images/client/Sri-Gokulam-Hospitals-salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Sks Hospital Salem', 'slug': 'sks-hospital-salem', 'url': 'assets/images/client/Sks-hospital-salem.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
-    { 'title': 'Shifa Hospitals Tirunelveli', 'slug': 'shifa-hospitals-tirunelveli', 'url': 'assets/images/client/Shifa-Hospitals-Tirunelveli.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
-    { 'title': 'Sheela Hospitals Coimbatore', 'slug': 'sheela-hospitals-coimbatore', 'url': 'assets/images/client/Sheela-hospitals-Coimbatore.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Salem Steel Plant Hospital Salem', 'slug': 'salem-steel-plant-hospital-salem', 'url': 'assets/images/client/Salem-Steel-Plant-Hospital-Salem.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Revathi Hospital Tiruppur', 'slug': 'revathi-hospital-tiruppur', 'url': 'assets/images/client/Revathi-Hospital-Tiruppur.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Ramanagounder Medical Trust Coimbatore', 'slug': 'ramanagounder-medical-trust-coimbatore', 'url': 'assets/images/client/Ramanagounder-medical-trust-Coimbatore.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Kmc Trichy', 'slug': 'kmc-trichy', 'url': 'assets/images/client/KMC-Trichy.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Indian Red Cross Blood Bank Thanjavur', 'slug': 'indian-red-cross-blood-bank-thanjavur', 'url': 'assets/images/client/Indian-red-Cross-blood-bank-thanjavur.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Govt. Coimbatore Medical College', 'slug': 'govt.-coimbatore-medical-college', 'url': 'assets/images/client/Govt.-Coimbatore-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Govt. Theni Medical College', 'slug': 'govt.-theni-medical-college', 'url': 'assets/images/client/Govt.-theni-medical-college.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Gunam Hospitals Hosur', 'slug': 'gunam-hospitals-hosur', 'url': 'assets/images/client/Gunam-hospitals-Hosur.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
-    { 'title': 'Govt. Madurai Medical College', 'slug': 'govt.-madurai-medical-college', 'url': 'assets/images/client/Govt.-Madurai-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Govt Vellore Medical College', 'slug': 'govt-vellore-medical-college', 'url': 'assets/images/client/Govt-vellore-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Govt Sivagangai Medical College', 'slug': 'govt-sivagangai-medical-college', 'url': 'assets/images/client/Govt-sivagangai-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Govt Salem Medical College', 'slug': 'govt-salem-medical-college', 'url': 'assets/images/client/Govt-salem-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Erode Lions Blood Bank Erode', 'slug': 'erode-lions-blood-bank-erode', 'url': 'assets/images/client/Erode-Lions-Blood-Bank-erode.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Arunai Medical College Hospital Tiruvannamalai', 'slug': 'arunai-medical-college-hospital-tiruvannamalai', 'url': 'assets/images/client/Arunai-Medical-college-hospital-Tiruvannamalai.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
-    { 'title': 'Annapoorana Medical College Salem', 'slug': 'annapoorana-medical-college-salem', 'url': 'assets/images/client/Annapoorana-Medical-College-Salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' }
-    ]
-    const clientImg = document.querySelector('#client-img');
-    clients.forEach((client, index) => {
-      const AOS = index % 2 == 0 ? 'zoom-in-right' : 'zoom-in-left';
-      const slide = `
+    <div id="progress" class="progress hide">
+      <div id="progress-value"></div>
+    </div>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="venobox/venobox.js"></script>
+    <script src="venobox/venobox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/my.js"></script>
+    <script>
+      const clients = [
+        {
+          title: "Vinayaka Missions Kirupananda Variyar Medical College Salem",
+          slug: "vinayaka-missions-kirupananda-variyar-medical-college-salem",
+          url: "assets/images/client/Vinayaka-missions-kirupananda-variyar-medical-college-salem.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Vims Hospital Salem",
+          slug: "vims-hospital-salem",
+          url: "assets/images/client/VIMS-hospital-Salem.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Villupuram Govt. Medical College",
+          slug: "villupuram-govt.-medical-college",
+          url: "assets/images/client/Villupuram-govt.-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Tirunelveli Medical College",
+          slug: "tirunelveli-medical-college",
+          url: "assets/images/client/Tirunelveli-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2 h-100",
+        },
+        {
+          title: "Uyirthuli Blood Bank Trichy",
+          slug: "uyirthuli-blood-bank-trichy",
+          url: "assets/images/client/Uyirthuli-Blood-Bank-Trichy.jpg",
+          class: "col-12 col-md-8 col-lg-6 col-xl-4",
+        },
+        {
+          title: "Thootukudi Medical College",
+          slug: "thootukudi-medical-college",
+          url: "assets/images/client/Thootukudi-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Tcr Multispeciality Hospital Krishnagiri",
+          slug: "tcr-multispeciality-hospital-krishnagiri",
+          url: "assets/images/client/Tcr-Multispeciality-hospital-Krishnagiri.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "St Joseph Hospital Dindigul",
+          slug: "st-joseph-hospital-dindigul",
+          url: "assets/images/client/St-Joseph-Hospital-Dindigul.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Sri Gokulam Hospitals Salem",
+          slug: "sri-gokulam-hospitals-salem",
+          url: "assets/images/client/Sri-Gokulam-Hospitals-salem.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Sks Hospital Salem",
+          slug: "sks-hospital-salem",
+          url: "assets/images/client/Sks-hospital-salem.png",
+          class: "col-12 col-md-8 col-lg-6 col-xl-4",
+        },
+        {
+          title: "Shifa Hospitals Tirunelveli",
+          slug: "shifa-hospitals-tirunelveli",
+          url: "assets/images/client/Shifa-Hospitals-Tirunelveli.png",
+          class: "col-12 col-md-8 col-lg-6 col-xl-4",
+        },
+        {
+          title: "Sheela Hospitals Coimbatore",
+          slug: "sheela-hospitals-coimbatore",
+          url: "assets/images/client/Sheela-hospitals-Coimbatore.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Salem Steel Plant Hospital Salem",
+          slug: "salem-steel-plant-hospital-salem",
+          url: "assets/images/client/Salem-Steel-Plant-Hospital-Salem.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Revathi Hospital Tiruppur",
+          slug: "revathi-hospital-tiruppur",
+          url: "assets/images/client/Revathi-Hospital-Tiruppur.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Ramanagounder Medical Trust Coimbatore",
+          slug: "ramanagounder-medical-trust-coimbatore",
+          url: "assets/images/client/Ramanagounder-medical-trust-Coimbatore.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Kmc Trichy",
+          slug: "kmc-trichy",
+          url: "assets/images/client/KMC-Trichy.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Indian Red Cross Blood Bank Thanjavur",
+          slug: "indian-red-cross-blood-bank-thanjavur",
+          url: "assets/images/client/Indian-red-Cross-blood-bank-thanjavur.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Govt. Coimbatore Medical College",
+          slug: "govt.-coimbatore-medical-college",
+          url: "assets/images/client/Govt.-Coimbatore-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Govt. Theni Medical College",
+          slug: "govt.-theni-medical-college",
+          url: "assets/images/client/Govt.-theni-medical-college.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Gunam Hospitals Hosur",
+          slug: "gunam-hospitals-hosur",
+          url: "assets/images/client/Gunam-hospitals-Hosur.png",
+          class: "col-12 col-md-8 col-lg-6 col-xl-4",
+        },
+        {
+          title: "Govt. Madurai Medical College",
+          slug: "govt.-madurai-medical-college",
+          url: "assets/images/client/Govt.-Madurai-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Govt Vellore Medical College",
+          slug: "govt-vellore-medical-college",
+          url: "assets/images/client/Govt-vellore-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Govt Sivagangai Medical College",
+          slug: "govt-sivagangai-medical-college",
+          url: "assets/images/client/Govt-sivagangai-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Govt Salem Medical College",
+          slug: "govt-salem-medical-college",
+          url: "assets/images/client/Govt-salem-medical-college.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Erode Lions Blood Bank Erode",
+          slug: "erode-lions-blood-bank-erode",
+          url: "assets/images/client/Erode-Lions-Blood-Bank-erode.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Arunai Medical College Hospital Tiruvannamalai",
+          slug: "arunai-medical-college-hospital-tiruvannamalai",
+          url: "assets/images/client/Arunai-Medical-college-hospital-Tiruvannamalai.png",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+        {
+          title: "Annapoorana Medical College Salem",
+          slug: "annapoorana-medical-college-salem",
+          url: "assets/images/client/Annapoorana-Medical-College-Salem.jpg",
+          class: "col-6 col-md-4 col-lg-3 col-xl-2",
+        },
+      ];
+      const clientImg = document.querySelector("#client-img");
+      clients.forEach((client, index) => {
+        const AOS = index % 2 == 0 ? "zoom-in-right" : "zoom-in-left";
+        const slide = `
       <div class="${client.class} mb-4" data-aos="${AOS}"> <div class="client-card-box text-center p-3 h-100 d-flex flex-column justify-content-between">     <div class="client-image d-flex justify-content-center align-items-center mb-3">         <img              src="${client.url}"              alt="${client.title}"              class="w-100 rounded"             style="max-height: 150px;" />     </div>      </div></div>
 
     
         `;
-      clientImg.innerHTML += slide;
-    });
+        clientImg.innerHTML += slide;
+      });
+    </script>
 
-  </script>
-
-  <script src="assets/js/whatsapp-button.js"></script>
-
-</body>
-
+    <script src="assets/js/whatsapp-button.js"></script>
+  </body>
 </html>

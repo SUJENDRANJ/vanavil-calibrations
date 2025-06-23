@@ -1,137 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-569Z3TFR");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="author" content="Graham Hannington" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Innak readme</title>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="http://rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css"
+    />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f6f8fa;
-            color: #000;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f8fa;
+        color: #000;
+      }
 
-        .markdown-heading h1 {
-            border-bottom: 1px solid #586069;
-        }
+      .markdown-heading h1 {
+        border-bottom: 1px solid #586069;
+      }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        .innak-font {
-            font-family: "Audiowide", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+      .innak-font {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-        .masthead {
-            background-color: #000000;
-            padding: 10px;
-            color: #fff;
-        }
+      .masthead {
+        background-color: #000000;
+        padding: 10px;
+        color: #fff;
+      }
 
-        .masthead-logo {
-            font-size: 20px;
-        }
+      .masthead-logo {
+        font-size: 20px;
+      }
 
-        .markdown-body {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            margin: 0;
-            color: #000;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-size: 16px;
-            line-height: 1.5;
-            word-wrap: break-word;
-            scroll-behavior: auto;
-        }
+      .markdown-body {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        margin: 0;
+        color: #000;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: 16px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        scroll-behavior: auto;
+      }
 
-        .markdown-body img {
-            border-style: none;
-            max-width: 100%;
-            box-sizing: content-box;
-            background-color:#fff;
-        }
+      .markdown-body img {
+        border-style: none;
+        max-width: 100%;
+        box-sizing: content-box;
+        background-color: #fff;
+      }
 
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #586069;
-        }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #586069;
+      }
     </style>
     <script type="text/javascript">
-        var HTTP_STATUS_OK = 200;
-        var URL_API_GITHUB_RENDER_MARKDOWN = "https://api.github.com/markdown/raw";
-        var README_FILE_NAME = "README.md";
+      var HTTP_STATUS_OK = 200;
+      var URL_API_GITHUB_RENDER_MARKDOWN =
+        "https://api.github.com/markdown/raw";
+      var README_FILE_NAME = "README.md";
 
-        var readmeURL = '../README.md';
+      var readmeURL = "../README.md";
 
+      // Get Markdown, then render it as HTML
+      function getThenRenderMarkdown(markdownURL) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", markdownURL, true);
+        xhr.responseType = "text";
+        xhr.onload = function (e) {
+          if (this.status == HTTP_STATUS_OK) {
+            // Response text contains Markdown
+            renderMarkdown(this.responseText);
+          }
+        };
+        xhr.send();
+      }
 
-        // Get Markdown, then render it as HTML
-        function getThenRenderMarkdown(markdownURL) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", markdownURL, true);
-            xhr.responseType = "text";
-            xhr.onload = function (e) {
-                if (this.status == HTTP_STATUS_OK) {
-                    // Response text contains Markdown
-                    renderMarkdown(this.responseText);
-                }
-            }
-            xhr.send();
-        }
+      // Use the GitHub API to render Markdown as HTML
+      function renderMarkdown(markdown) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", URL_API_GITHUB_RENDER_MARKDOWN, true);
+        xhr.responseType = "html";
+        xhr.onload = function (e) {
+          if (this.status == HTTP_STATUS_OK) {
+            document.getElementById("readme").innerHTML = this.response;
+          }
+        };
+        xhr.send(markdown);
+      }
 
-        // Use the GitHub API to render Markdown as HTML
-        function renderMarkdown(markdown) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", URL_API_GITHUB_RENDER_MARKDOWN, true);
-            xhr.responseType = "html";
-            xhr.onload = function (e) {
-                if (this.status == HTTP_STATUS_OK) {
-                    document.getElementById("readme").innerHTML = this.response;
-                }
-            }
-            xhr.send(markdown);
-        }
-
-        window.onload = function () {
-            getThenRenderMarkdown(readmeURL);
-        }
+      window.onload = function () {
+        getThenRenderMarkdown(readmeURL);
+      };
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-569Z3TFR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="masthead">
-        <div class="container text-center">
-            <h1><span class="innak-font">INNAK</span></h1>
-        </div>
+      <div class="container text-center">
+        <h1><span class="innak-font">INNAK</span></h1>
+      </div>
     </header>
     <div class="container">
-        <div id="readme" class="markdown-body">
-            <p>Rendering markdown, please wait...</p>
-        </div>
-        <footer class="footer">Rendering by
-            <a href="https://developer.github.com/v3/markdown/">GitHub</a>,
-        </footer>
+      <div id="readme" class="markdown-body">
+        <p>Rendering markdown, please wait...</p>
+      </div>
+      <footer class="footer">
+        Rendering by
+        <a href="https://developer.github.com/v3/markdown/">GitHub</a>,
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
